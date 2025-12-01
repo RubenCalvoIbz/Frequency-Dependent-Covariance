@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code, please cite the following paper."
-title: "Frequency-Dependent Covariance Reveals Critical Spatiotemporal Patterns of Synchronized Activity in the Human Brain"
+title: "Frequency-Dependent Covariance (FDC/FDPCA) code"
 authors:
   - family-names: "Calvo"
     given-names: "Rubén"
@@ -12,18 +12,29 @@ authors:
     given-names: "Serena"
   - family-names: "Muñoz"
     given-names: "Miguel A."
-type: article
-journal: "Physical Review Letters"
-volume: "133"
-issue: "20"
-year: 2024
-start: "208401"
-end: "208401"
 doi: "10.1103/PhysRevLett.133.208401"
-url: "https://doi.org/10.1103/PhysRevLett.133.208401"
-identifiers:
-  - type: doi
-    value: "10.1103/PhysRevLett.133.208401"
-  - type: other
-    value: "arXiv:2403.15092"
+url: "https://github.com/RubenCalvoIbz/Frequency-Dependent-Covariance"
 repository-code: "https://github.com/RubenCalvoIbz/Frequency-Dependent-Covariance"
+
+preferred-citation:
+  type: article
+  title: "Frequency-Dependent Covariance Reveals Critical Spatiotemporal Patterns of Synchronized Activity in the Human Brain"
+  authors:
+    - family-names: "Calvo"
+      given-names: "Rubén"
+    - family-names: "Martorell"
+      given-names: "Carles"
+    - family-names: "Morales"
+      given-names: "Guillermo B."
+    - family-names: "Di Santo"
+      given-names: "Serena"
+    - family-names: "Muñoz"
+      given-names: "Miguel A."
+  journal: "Physical Review Letters"
+  volume: "133"
+  issue: "20"
+  year: 2024
+  start: "208401"
+  end: "208401"
+  doi: "10.1103/PhysRevLett.133.208401"
+  url: "https://doi.org/10.1103/PhysRevLett.133.208401"
