@@ -593,10 +593,10 @@ def POWER_SPECTRUM(
 
 
 # ============================================================================
-# Distance to criticality (Dahmen-style estimator)
+# Distance to criticality (Beyond mean field estimator)
 # ============================================================================
 
-def Distance_criticality_Dahmen(
+def Distance_criticality(
     C: np.ndarray,
     N: int,
     T: int,
@@ -633,7 +633,7 @@ def Distance_criticality_Dahmen(
     Notes
     -----
     This follows the moment-based estimator of the effective coupling g
-    in nearly critical random networks (Dahmen-style), using:
+    in nearly critical random networks (Beyond mean field), using:
 
         Delta^2 = M2 / trace^2
 
