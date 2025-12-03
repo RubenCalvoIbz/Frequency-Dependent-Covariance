@@ -647,7 +647,7 @@ def Distance_criticality(
     C = np.asarray(C)
     omegas = np.asarray(omegas)
 
-    diag_idx = np.diag_indices(N)
+    off_mask = ~np.eye(N, dtype=bool)
 
     if len(omegas) > 1:
         g_inferred = np.zeros((2, len(omegas)))
@@ -656,7 +656,7 @@ def Distance_criticality(
             Cw = C[:, :, w]
 
             trace0 = np.real(np.trace(Cw)) / float(N)
-            M2 = np.sqrt(np.real(np.mean(np.abs(Cw[diag_idx]) ** 2)))
+            M2 = np.sqrt(np.real(np.mean(np.abs(Cw[off_mask]) ** 2)))
 
             Delta0 = M2 / trace0
 
@@ -675,7 +675,7 @@ def Distance_criticality(
         g_inferred = np.zeros(2)
 
         trace0 = np.real(np.trace(Cw)) / float(N)
-        M2 = np.sqrt(np.real(np.mean(np.abs(Cw[diag_idx]) ** 2)))
+        M2 = np.sqrt(np.real(np.mean(np.abs(Cw[off_mask]) ** 2)))
 
         Delta0 = M2 / trace0
 
@@ -690,6 +690,7 @@ def Distance_criticality(
         )
 
     return g_inferred
+
 
 
 # ============================================================================
